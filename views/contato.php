@@ -48,10 +48,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</ul>
 					<div class="cart box_1">
 						<a href="checkout.php">
-							<h3> <div class="total">
-								<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)</div>
-								<img src="../images/cart.png" alt=""/>
-							</h3>
+								<h3> 
+									<div class="total">
+										<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
+									</div>
+									<img src="../images/cart.png" alt=""/>
+								</h3>
 						</a>
 						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 					</div>
@@ -64,7 +66,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<div class="head-top">
 				<div class="logo">
-					<a href="index.html"><img src="../images/logo.png" alt=""></a>	
+					<a href="index.php"><img src="../images/logo.png" alt=""></a>	
 				</div>
 				<div class=" h_menu4">
 					<ul class="memenu skyblue">
