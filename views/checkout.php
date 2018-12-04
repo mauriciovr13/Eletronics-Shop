@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
     <head>
-        <title>New Store A Ecommerce Category Flat Bootstarp Resposive Website Template | Checkout :: w3layouts</title>
+        <title>Carrinho - Eletronics-Shop</title>
         <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="../js/jquery.min.js"></script>
@@ -37,14 +37,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                     <div class="search">
                        <form>
                             <input type="text" value="Search " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-                            <input type="submit" value="Go">
+                            <input type="submit" value="Buscar">
                         </form>
                     </div>
                     <div class="header-left">		
                         <ul>
-                            <li ><a class="lock"  href="login.php">Login</a></li>
+                            <li><a class="lock" href="login.php">Login</a></li>
                             <li><a class="lock" href="cadastrar.php">Cadastrar</a></li>
-                            <li></li>
                         </ul>
                         <div class="cart box_1">
                             <a href="#">
@@ -55,7 +54,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                     <img src="../images/cart.png" alt=""/>
                                 </h3>
                             </a>
-                            <p><a href="javascript:(0);" class="simpleCart_empty">Esvaziar carrinho</a></p>
                         </div>
                         <div class="clearfix"> </div>
                     </div>
@@ -76,29 +74,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<div class="col1">
 											<div class="h_nav">
 												<ul>
-													<li><a href="products.html">Accessories</a></li>
-													<li><a href="products.html">Leather Jackets</a></li>
-													<li><a href="products.html">Long Sleeve T-Shirts</a></li>
-													<li><a href="products.html">Loungewear</a></li>
+													<li><a href="products.html">Categoria1</a></li>
+													<li><a href="products.html">Categoria2</a></li>
+													<li><a href="products.html">Categoria3</a></li>
+													<li><a href="products.html">Categoria4</a></li>
 												</ul>	
 											</div>							
 										</div>
 									</div>
 								</div>	
 							</li>
-							<li class="grid"><a class="color2" href="#">Paginas</a>
-								<div class="mepanel">
-									<div class="row">
-										<div class="h_nav">
-											<ul>
-												<li><a href="products.html">Accessories</a></li>
-												<li><a href="products.html">Bags</a></li>
-												<li><a href="products.html">Loungewear</a></li>
-											</ul>	
-										</div>							
-									</div>
-								</div>
-							</li>			
 							<li><a class="color6" href="contato.php">Contato</a></li>
 						</ul> 
 					</div>
@@ -176,10 +161,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                                 <h3>Price Details</h3>
                                 <span>Total</span>
                                 <span class="total1">6200.00</span>
-                                <span>Discount</span>
+                                <span>Desconto</span>
                                 <span class="total1">---</span>
-                                <span>Delivery Charges</span>
-                                <span class="total1">150.00</span>
+                                <span>Frete</span>
+                                <span class="total1">15.00</span>
                                 <div class="clearfix"></div>				 
                             </div>	
                             <ul class="total_price">
@@ -195,50 +180,35 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
         <!--//content-->
         <div class="footer">
-                        <div class="container">
-                    <div class="footer-top-at">
-                    
-                        <div class="col-md-4 amet-sed">
-                        <h4>MORE INFO</h4>
-                        <ul class="nav-bottom">
-                                <li><a href="#">How to order</a></li>
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="contact.html">Location</a></li>
-                                <li><a href="#">Shipping</a></li>
-                                <li><a href="#">Membership</a></li>	
-                            </ul>	
-                        </div>
-                        <div class="col-md-4 amet-sed ">
-                        <h4>CONTACT US</h4>
-                        
-                            <p>
-        Contrary to popular belief</p>
-                            <p>The standard chunk</p>
-                            <p>office:  +12 34 995 0792</p>
-                            <ul class="social">
-                                <li><a href="#"><i> </i></a></li>						
-                                <li><a href="#"><i class="twitter"> </i></a></li>
-                                <li><a href="#"><i class="rss"> </i></a></li>
-                                <li><a href="#"><i class="gmail"> </i></a></li>
-                                
-                            </ul>
-                        </div>
-                        <div class="col-md-4 amet-sed">
-                            <h4>Newsletter</h4>
-                            <p>Sign Up to get all news update
-        and promo</p>
-                            <form>
-                                <input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
-                                <input type="submit" value="Sign up">
-                            </form>
-                        </div>
-                        <div class="clearfix"> </div>
-                    </div>
-                </div>
-                <div class="footer-class">
-                <p >© 2015 New store All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
-                </div>
-                </div>
+			<div class="container">
+				<div class="footer-top-at">
+					<div class="col-md-6 amet-sed ">
+						<h4>Eletronics Shop</h4>
+						<p>Universidade Federal de Lavras</p>
+						<p>Lavras - MG</p>
+						<p>telefone: +55 35 3634 1112</p>
+						<ul class="social">
+							<li><a href="#"><i> </i></a></li>						
+							<li><a href="#"><i class="twitter"> </i></a></li>
+							<li><a href="#"><i class="rss"> </i></a></li>
+							<li><a href="#"><i class="gmail"> </i></a></li>
+						</ul>
+					</div>
+					<div class="col-md-6 amet-sed">
+						<h4>Newsletter</h4>
+						<p>Assine nossa newsletter para receber promoçoes</p>
+						<form>
+							<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+							<input type="submit" value="Enviar">
+						</form>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<div class="footer-class">
+				<p>© 2018 Eletronics Shop All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+			</div>
+		</div>
     </body>
 </html>
 			

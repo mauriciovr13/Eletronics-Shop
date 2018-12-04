@@ -37,14 +37,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="search">
 						<form>
 							<input type="text" value="Search " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-							<input type="submit" value="Go">
+							<input type="submit" value="Buscar">
 						</form>
 					</div>
 					<div class="header-left">		
 						<ul>
-							<li ><a class="lock"  href="login.php">Login</a></li>
+							<li ><a class="lock"  href="#">Login</a></li>
 							<li><a class="lock" href="cadastrar.php">Cadastrar</a></li>
-							<li></li>
 						</ul>
 						<div class="cart box_1">
 							<a href="checkout.html">
@@ -53,7 +52,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<img src="../images/cart.png" alt=""/>
 								</h3>
 							</a>
-							<p><a href="javascript:;" class="simpleCart_empty">Carrinho vazio</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -74,38 +72,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<div class="col1">
 											<div class="h_nav">
 												<ul>
-													<li><a href="produtos.php">Accessories</a></li>
-													<li><a href="products.html">Bags</a></li>
-													<li><a href="products.html">Caps & Hats</a></li>
-													<li><a href="products.html">Hoodies & Sweatshirts</a></li>
-													<li><a href="products.html">Jackets & Coats</a></li>
-													<li><a href="products.html">Jeans</a></li>
-													<li><a href="products.html">Jewellery</a></li>
-													<li><a href="products.html">Jumpers & Cardigans</a></li>
-													<li><a href="products.html">Leather Jackets</a></li>
-													<li><a href="products.html">Long Sleeve T-Shirts</a></li>
-													<li><a href="products.html">Loungewear</a></li>
+													<li><a href="produtos.php">Categoria1</a></li>
+													<li><a href="products.html">Categoria2</a></li>
+													<li><a href="products.html">Categoria3</a></li>
+													<li><a href="products.html">Categoria4</a></li>
+													<li><a href="products.html">Categoria5</a></li>
 												</ul>	
 											</div>							
 										</div>
 									</div>
 								</div>	
 							</li>
-							<li class="grid"><a class="color2" href="#">Paginas</a>
-								<div class="mepanel">
-									<div class="row">
-										<div class="h_nav">
-											<ul>
-												<li><a href="products.html">Accessories</a></li>
-												<li><a href="produto.php">Teste</a></li>
-												<li><a href="products.html">Caps & Hats</a></li>
-											</ul>	
-										</div>							
-									</div>
-								</div>
-							</li>			
 							<li>
-								<a class="color6" href="produto.php">Contato</a>
+								<a class="color6" href="contato.php">Contato</a>
 							</li>
 						</ul> 
 					</div>
@@ -126,18 +105,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<input type="text"> 
 							</div>
 							<div> 
-								<span>Password</span>
+								<span>Senha</span>
 								<input type="password">
 							</div>				
 							<input type="submit" value="Login"> 
 						</form>
 					</div>
 					<div class="col-md-4 left-account ">
-						<a href="single.html"><img class="img-responsive " src="../images/s1.jpg" alt=""></a>
-						<div class="five">
-							<h2>25% </h2><span>discount</span>
-						</div>
-						<a href="register.html" class="create">Create an account</a>
+						<a href="single.html"><img class="img-responsive " src="../images/blog_1.jpg" alt=""></a>
+						<a href="cadastrar.php" class="create">Criar uma conta</a>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="clearfix"> </div>
@@ -149,21 +125,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="footer">
 			<div class="container">
 				<div class="footer-top-at">
-					<div class="col-md-4 amet-sed">
-						<h4>MORE INFO</h4>
-						<ul class="nav-bottom">
-							<li><a href="#">How to order</a></li>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="contact.html">Location</a></li>
-							<li><a href="#">Shipping</a></li>
-							<li><a href="#">Membership</a></li>	
-						</ul>	
-					</div>
-					<div class="col-md-4 amet-sed ">
-						<h4>CONTACT US</h4>
-						<p>Contrary to popular belief</p>
-						<p>The standard chunk</p>
-						<p>office:  +12 34 995 0792</p>
+					<div class="col-md-6 amet-sed ">
+						<h4>Eletronics Shop</h4>
+						<p>Universidade Federal de Lavras</p>
+						<p>Lavras - MG</p>
+						<p>telefone: +55 35 3634 1112</p>
 						<ul class="social">
 							<li><a href="#"><i> </i></a></li>						
 							<li><a href="#"><i class="twitter"> </i></a></li>
@@ -171,19 +137,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li><a href="#"><i class="gmail"> </i></a></li>
 						</ul>
 					</div>
-					<div class="col-md-4 amet-sed">
+					<div class="col-md-6 amet-sed">
 						<h4>Newsletter</h4>
-						<p>Sign Up to get all news update and promo</p>
+						<p>Assine nossa newsletter para receber promoçoes</p>
 						<form>
 							<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
-							<input type="submit" value="Sign up">
+							<input type="submit" value="Enviar">
 						</form>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
-				<div class="footer-class">
-				<p>© 2015 New store All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+			<div class="footer-class">
+				<p>© 2018 Eletronics Shop All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 			</div>
 		</div>
 	</body>

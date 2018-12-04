@@ -86,19 +86,19 @@ a.item_add {
 }
 .search{
 	position:relative;
-	  float: left;
-  width: 25%;
+	float: left;
+  width: 70%;
   background-color: #fff;
-    margin-top: 11px;
+  margin-top: 5px;
 }
 .search input[type="text"] {
 	outline: none;
   padding: 3px 15px;
   background: none;
-  width: 91%;
+  width: 90%;
   border: none;
   font-size: 1.2em;
-  color: #000; 
+  color: #020; 
    font-weight: 700; 	
 }
 .search input[type="submit"] {	
@@ -446,6 +446,7 @@ height: 35px;
 }
 .grid-top{
 	position: relative;
+	padding-bottom: 50px;
 }
 /*----*/
 .col-md1 {

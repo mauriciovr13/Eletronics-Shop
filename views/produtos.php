@@ -37,7 +37,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="search">
 						<form>
 							<input type="text" value="Search " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-							<input type="submit" value="Go">
+							<input type="submit" value="Buscar">
 						</form>
 					</div>
 					<div class="header-left">		
@@ -123,12 +123,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
         </div>
                     
         <!--content-->
-       
         <div class="product">
             <div class="container">
                
                 <!-- produtos -->
-
                 <div class="col-md-12 product1">
                     <div class=" bottom-product">
                         <div class="col-md-3 bottom-cd simpleCart_shelfItem">

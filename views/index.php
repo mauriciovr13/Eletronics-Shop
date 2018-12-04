@@ -36,8 +36,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="container">
 					<div class="search">
 						<form>
-							<input type="text" value="Search " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-							<input type="submit" value="Go">
+							<input type="text" value="Buscar um produto " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+							<input type="submit" value="Buscar">
 						</form>
 					</div>
 					<div class="header-left">		
@@ -54,7 +54,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<img src="../images/cart.png" alt=""/>
 								</h3>
 							</a>
-							<p><a href="javascript:;" class="simpleCart_empty">Esvaziar carrinho</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -75,29 +74,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 										<div class="col1">
 											<div class="h_nav">
 												<ul>
-													<li><a href="products.html">Accessories</a></li>
-													<li><a href="products.html">Leather Jackets</a></li>
-													<li><a href="products.html">Long Sleeve T-Shirts</a></li>
-													<li><a href="products.html">Loungewear</a></li>
+													<li><a href="products.html">Categoria1</a></li>
+													<li><a href="products.html">Categoria2</a></li>
+													<li><a href="products.html">Categoria4</a></li>
+													<li><a href="products.html">Categoria5</a></li>
 												</ul>	
 											</div>							
 										</div>
 									</div>
 								</div>	
 							</li>
-							<li class="grid"><a class="color2" href="#">Paginas</a>
-								<div class="mepanel">
-									<div class="row">
-										<div class="h_nav">
-											<ul>
-												<li><a href="products.html">Accessories</a></li>
-												<li><a href="products.html">Bags</a></li>
-												<li><a href="products.html">Loungewear</a></li>
-											</ul>	
-										</div>							
-									</div>
-								</div>
-							</li>			
 							<li><a class="color6" href="contato.php">Contato</a></li>
 						</ul> 
 					</div>
@@ -111,13 +97,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<script src="../js/responsiveslides.min.js"></script>
 				<script>
 					$(function () {
-					$("#slider").responsiveSlides({
-						auto: true,
-						nav: true,
-						speed: 500,
-						namespace: "callbacks",
-						pager: true,
-					});
+						$("#slider").responsiveSlides({
+							auto: true,
+							nav: true,
+							speed: 500,
+							namespace: "callbacks",
+							pager: true,
+						});
 					});
 				</script>
 				<div id="top" class="callbacks_container">
@@ -149,121 +135,203 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 
 		<!--content-->
+		<div class="product">
+            <div class="container">
+				<div class="content-top">
+					<h1>Recomendados para você</h1>
+				</div>
+			
+                <!-- produtos -->
+                <div class="col-md-12 product1">
+					<div class="grid-in">
+						<div class=" bottom-product">
+							<div class="col-md-4 bottom-cd simpleCart_shelfItem grid-top">
+								<div class="product-at">
+									<a href="produto.php" class="b-link-stripe b-animate-go thickbox"><img class="img-responsive" src="../images/pi3.jpg" alt=""></a>
+								</div>
+								<p class="tun">Pequena descrição</p>
+								<a href="#" class="item_add"><p class="number item_price"><i> </i>R$500.00</p></a>			
+							</div>
+							<div class="col-md-4 bottom-cd simpleCart_shelfItem grid-top">
+								<div class="product-at ">
+									<a href="produto.php" class="b-link-stripe b-animate-go thickbox"><img class="img-responsive" src="../images/pi3.jpg" alt=""></a>
+								</div>
+								<p class="tun">It is a long established fact that a reader</p>
+								<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>
+							</div>
+							<div class="col-md-4 bottom-cd simpleCart_shelfItem grid-top">
+								<div class="product-at ">
+									<a href="produto.php" class="b-link-stripe b-animate-go thickbox"><img class="img-responsive" src="../images/pi3.jpg" alt=""></a>
+								</div>
+								<p class="tun">It is a long established fact that a reader</p>
+								<a href="#" class="item_add"><p class="number item_price"><i> </i>$300.00</p></a>
+							</div>
+							<div class="col-md-4 bottom-cd simpleCart_shelfItem grid-top">
+								<div class="product-at ">
+									<a href="produto.php" class="b-link-stripe b-animate-go thickbox"><img class="img-responsive" src="../images/pi3.jpg" alt=""></a>	
+								</div>
+								<p class="tun">It is a long established fact that a reader</p>
+								<a href="#" class="item_add"><p class="number item_price"><i> </i>$100.00</p></a>
+							</div>
+							<div class="col-md-4 bottom-cd simpleCart_shelfItem grid-top">
+								<div class="product-at ">
+									<a href="produto.php" class="b-link-stripe b-animate-go thickbox"><img class="img-responsive" src="../images/pi3.jpg" alt=""></a>
+								</div>
+								<p class="tun">It is a long established fact that a reader</p>
+								<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>					
+							</div>  
+							<div class="col-md-4 bottom-cd simpleCart_shelfItem grid-top">
+								<div class="product-at ">
+									<a href="produto.php" class="b-link-stripe b-animate-go thickbox"><img class="img-responsive" src="../images/pi3.jpg" alt=""></a>	
+								</div>
+								<p class="tun">It is a long established fact that a reader</p>
+								<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>					
+							</div>
+							<div class="col-md-4 bottom-cd simpleCart_shelfItem grid-top">
+								<div class="product-at ">
+									<a href="produto.php" class="b-link-stripe b-animate-go thickbox"><img class="img-responsive" src="../images/pi3.jpg" alt=""></a>	
+								</div>
+								<p class="tun">It is a long established fact that a reader</p>
+								<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>					
+							</div>
+							<div class="col-md-4 bottom-cd simpleCart_shelfItem grid-top" >
+								<div class="product-at ">
+									<a href="produto.php" class="b-link-stripe b-animate-go thickbox"><img class="img-responsive" src="../images/pi3.jpg" alt=""></a>	
+								</div>
+								<p class="tun">It is a long established fact that a reader</p>
+								<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>					
+							</div>
+							<div class="col-md-4 bottom-cd simpleCart_shelfItem grid-top">
+								<div class="product-at ">
+									<a href="produto.php" class="b-link-stripe b-animate-go thickbox"><img class="img-responsive" src="../images/pi3.jpg" alt=""></a>	
+								</div>
+								<p class="tun">It is a long established fact that a reader</p>
+								<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>					
+							</div>
+							<div class="col-md-4 bottom-cd simpleCart_shelfItem grid-top">
+								<div class="product-at ">
+									<a href="produto.php" class="b-link-stripe b-animate-go thickbox"><img class="img-responsive" src="../images/pi3.jpg" alt=""></a>	
+								</div>
+								<p class="tun">It is a long established fact that a reader</p>
+								<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>					
+							</div>
+							<div class="col-md-4 bottom-cd simpleCart_shelfItem grid-top">
+								<div class="product-at ">
+									<a href="produto.php" class="b-link-stripe b-animate-go thickbox"><img class="img-responsive" src="../images/pi3.jpg" alt=""></a>	
+								</div>
+								<p class="tun">It is a long established fact that a reader</p>
+								<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>					
+							</div>
+							<div class="col-md-4 bottom-cd simpleCart_shelfItem grid-top">
+								<div class="product-at ">
+									<a href="produto.php" class="b-link-stripe b-animate-go thickbox"><img class="img-responsive" src="../images/pi3.jpg" alt=""></a>	
+								</div>
+								<p class="tun">It is a long established fact that a reader</p>
+								<a href="#" class="item_add"><p class="number item_price"><i> </i>$500.00</p></a>					
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    
 
+		<!--content-->
 		<div class="content">
 			<div class="container">
-			<div class="content-top">
-				<h1>Recomendados para você</h1>
-				<div class="grid-in">
-					<div class="col-md-4 grid-top">
-						<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="../img-responsive" src="../images/pi.jpg" alt="">
-							<div class="b-wrapper">
-								<h3 class="b-animate b-from-left b-delay03 ">
-									<span>T-Shirt</span>	
-								</h3>
-							</div>
-						</a>
-						<p><a href="single.html">Contrary to popular</a></p>
-					</div>
-					<div class="col-md-4 grid-top">
-						<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="../img-responsive" src="../images/pi1.jpg" alt="">
-							<div class="b-wrapper">
-								<h3 class="b-animate b-from-left b-delay03">
-									<span>Shoe</span>
-								<h3>
-							</div>
-						</a>
-						<p><a href="single.html">classical Latin</a></p>
-					</div>
-					<div class="col-md-4 grid-top">
-						<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="../img-responsive" src="../images/pi2.jpg" alt="">
-							<div class="b-wrapper">
-								<h3 class="b-animate b-from-left    b-delay03 "> <span>Bag</span> </h3>
-							</div>
-						</a>
-						<p><a href="single.html">undoubtable</a></p>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-				<div class="grid-in">
-					<div class="col-md-4 grid-top">
-						<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="../img-responsive" src="../images/pi3.jpg" alt="">
-							<div class="b-wrapper"> <h3 class="b-animate b-from-left    b-delay03 "> <span>Shirt</span>	</h3></div>
-						</a>
-						<p><a href="single.html">suffered alteration</a></p>
-					</div>
-					<div class="col-md-4 grid-top">
-						<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="../img-responsive" src="../images/pi4.jpg" alt="">
-							<div class="b-wrapper">
-								<h3 class="b-animate b-from-left    b-delay03 "> <span>Bag</span></h3>
-										</div>
-						</a>
-					<p><a href="single.html">Content here</a></p>
-					</div>
-					<div class="col-md-4 grid-top">
-						<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="../img-responsive" src="../images/pi5.jpg" alt="">
-							<div class="b-wrapper">
-											<h3 class="b-animate b-from-left    b-delay03 ">
-												<span>Shoe</span>	
-											</h3>
-										</div>
-						</a>
-					<p><a href="single.html">readable content</a></p>
-					</div>
-							<div class="clearfix"> </div>
-				</div>
-			</div>
-			
-			<!----->
-			
-			
-			</div>
-			
-		</div>
-		<div class="footer">
-						<div class="container">
-					<div class="footer-top-at">
-					
-						<div class="col-md-4 amet-sed">
-						<h4>MORE INFO</h4>
-						<ul class="nav-bottom">
-								<li><a href="#">How to order</a></li>
-								<li><a href="#">FAQ</a></li>
-								<li><a href="contact.html">Location</a></li>
-								<li><a href="#">Shipping</a></li>
-								<li><a href="#">Membership</a></li>	
-							</ul>	
+				<div class="content-top">
+					<h1>Recomendados para você</h1>
+					<div class="grid-in">
+						<div class="col-md-4 grid-top">
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="img-responsive" src="../images/pi.jpg" alt="">
+								<div class="b-wrapper">
+									<h3 class="b-animate b-from-left b-delay03 ">
+										<span>T-Shirt</span>	
+									</h3>
+								</div>
+							</a>
+							<p><a href="single.html">Contrary to popular</a></p>
 						</div>
-						<div class="col-md-4 amet-sed ">
-						<h4>CONTACT US</h4>
-						
-							<p>
-		Contrary to popular belief</p>
-							<p>The standard chunk</p>
-							<p>office:  +12 34 995 0792</p>
-							<ul class="social">
-								<li><a href="#"><i> </i></a></li>						
-								<li><a href="#"><i class="twitter"> </i></a></li>
-								<li><a href="#"><i class="rss"> </i></a></li>
-								<li><a href="#"><i class="gmail"> </i></a></li>
-								
-							</ul>
+						<div class="col-md-4 grid-top">
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="../img-responsive" src="../images/pi1.jpg" alt="">
+								<div class="b-wrapper">
+									<h3 class="b-animate b-from-left b-delay03">
+										<span>Shoe</span>
+									<h3>
+								</div>
+							</a>
+							<p><a href="single.html">classical Latin</a></p>
 						</div>
-						<div class="col-md-4 amet-sed">
-							<h4>Newsletter</h4>
-							<p>Sign Up to get all news update
-		and promo</p>
-							<form>
-								<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
-								<input type="submit" value="Sign up">
-							</form>
+						<div class="col-md-4 grid-top">
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="../img-responsive" src="../images/pi2.jpg" alt="">
+								<div class="b-wrapper">
+									<h3 class="b-animate b-from-left    b-delay03 "> <span>Bag</span> </h3>
+								</div>
+							</a>
+							<p><a href="single.html">undoubtable</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<div class="grid-in">
+						<div class="col-md-4 grid-top">
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="../img-responsive" src="../images/pi3.jpg" alt="">
+								<div class="b-wrapper"> <h3 class="b-animate b-from-left    b-delay03 "> <span>Shirt</span>	</h3></div>
+							</a>
+							<p><a href="single.html">suffered alteration</a></p>
+						</div>
+						<div class="col-md-4 grid-top">
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="../img-responsive" src="../images/pi4.jpg" alt="">
+								<div class="b-wrapper">
+									<h3 class="b-animate b-from-left    b-delay03 "> <span>Bag</span></h3>
+											</div>
+							</a>
+						<p><a href="single.html">Content here</a></p>
+						</div>
+						<div class="col-md-4 grid-top">
+							<a href="single.html" class="b-link-stripe b-animate-go  thickbox"><img class="../img-responsive" src="../images/pi5.jpg" alt="">
+								<div class="b-wrapper">
+												<h3 class="b-animate b-from-left    b-delay03 ">
+													<span>Shoe</span>	
+												</h3>
+											</div>
+							</a>
+						<p><a href="single.html">readable content</a></p>
+						</div>
+								<div class="clearfix"> </div>
+					</div>
 				</div>
-				<div class="footer-class">
-				<p >© 2015 New store All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<div class="container">
+				<div class="footer-top-at">
+					<div class="col-md-6 amet-sed ">
+						<h4>Eletronics Shop</h4>
+						<p>Universidade Federal de Lavras</p>
+						<p>Lavras - MG</p>
+						<p>telefone: +55 35 3634 1112</p>
+						<ul class="social">
+							<li><a href="#"><i> </i></a></li>						
+							<li><a href="#"><i class="twitter"> </i></a></li>
+							<li><a href="#"><i class="rss"> </i></a></li>
+							<li><a href="#"><i class="gmail"> </i></a></li>
+						</ul>
+					</div>
+					<div class="col-md-6 amet-sed">
+						<h4>Newsletter</h4>
+						<p>Assine nossa newsletter para receber promoçoes</p>
+						<form>
+							<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
+							<input type="submit" value="Enviar">
+						</form>
+					</div>
+					<div class="clearfix"> </div>
 				</div>
-				</div>
+			</div>
+			<div class="footer-class">
+				<p>© 2018 Eletronics Shop All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+			</div>
+		</div>
 	</body>
 </html>

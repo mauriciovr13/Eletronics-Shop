@@ -37,25 +37,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="search">
 					<form>
 						<input type="text" value="Search " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-						<input type="submit" value="Go">
+						<input type="submit" value="Buscar">
 					</form>
 				</div>
 				<div class="header-left">		
 					<ul>
 						<li ><a class="lock"  href="login.php">Login</a></li>
 						<li><a class="lock" href="cadastrar.php">Cadastrar</a></li>
-						<li> </li>
 					</ul>
 					<div class="cart box_1">
 						<a href="checkout.php">
-								<h3> 
-									<div class="total">
-										<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
-									</div>
-									<img src="../images/cart.png" alt=""/>
-								</h3>
+							<h3> 
+								<div class="total">
+                                    <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
+                                </div>
+								<img src="../images/cart.png" alt=""/>
+							</h3>
 						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -86,21 +84,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									</div>
 								</div>
 							</div>	
-						</li>
-						<li class="grid"><a class="color2" href="#">Paginas</a>
-							<div class="mepanel">
-								<div class="row">
-									<div class="h_nav">
-										<ul>
-											<li><a href="products.html">Accessories</a></li>
-											<li><a href="products.html">Bags</a></li>
-											<li><a href="products.html">Loungewear</a></li>
-										</ul>	
-									</div>							
-								</div>
-							</div>
-						</li>			
-						<li class="active grid"><a class="color8" href="contato.php">Contato</a></li>
+						</li>		
+						<li class="active grid"><a class="color8" href="#">Contato</a></li>
 					</ul> 
 				</div>
 				<div class="clearfix"> </div>
@@ -110,14 +95,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!--content-->
 		<div class="contact">
 			<div class="container">
-				<h1>Contact</h1>
+				<h1>Fale conosco</h1>
 				<div class="contact-form">
 					<div class="col-md-8 contact-grid">
 						<form>	
-							<input type="text" value="Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Name';}">
+							<input type="text" value="Nome" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Nome';}">
 							<input type="text" value="Email" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Email';}">
-							<input type="text" value="Subject" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Subject';}">
-							<textarea cols="77" rows="6" value=" " onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Message';}">Message</textarea>
+							<input type="text" value="Assunto" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Assunto';}">
+							<textarea cols="77" rows="6" value="Mensagem" onfocus="this.value='';" onblur="if (this.value == '') {this.value = 'Mensagem';}">Mensagem</textarea>
 							<div class="send">
 								<input type="submit" value="Enviar">
 							</div>
@@ -128,7 +113,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<h4>Endereço</h4>
 							<p>Eletronics Shop,</p>
 							<p>Tel: 1115550001</p>
-							<p>Email:<a href="mailto:contact@example.com"> contact@example.com</a></p>
+							<p>Email:<a href="mailto:contact@example.com"> eletronics-shop@gmail.com</a></p>
 							<p>Universidade Federal de Lavras,</p>
 							<p>Lavras - MG</p>
 						</div>
@@ -139,24 +124,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 
 		<!--//content-->
-		<div class="footer">
+        <div class="footer">
 			<div class="container">
 				<div class="footer-top-at">
-					<div class="col-md-4 amet-sed">
-						<h4>MORE INFO</h4>
-						<ul class="nav-bottom">
-							<li><a href="#">How to order</a></li>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="contact.html">Location</a></li>
-							<li><a href="#">Shipping</a></li>
-							<li><a href="#">Membership</a></li>	
-						</ul>	
-					</div>
-					<div class="col-md-4 amet-sed ">
-						<h4>CONTACT US</h4>
-						<p>	Contrary to popular belief</p>
-						<p>The standard chunk</p>
-						<p>office:  +12 34 995 0792</p>
+					<div class="col-md-6 amet-sed ">
+						<h4>Eletronics Shop</h4>
+						<p>Universidade Federal de Lavras</p>
+						<p>Lavras - MG</p>
+						<p>telefone: +55 35 3634 1112</p>
 						<ul class="social">
 							<li><a href="#"><i> </i></a></li>						
 							<li><a href="#"><i class="twitter"> </i></a></li>
@@ -164,19 +139,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li><a href="#"><i class="gmail"> </i></a></li>
 						</ul>
 					</div>
-					<div class="col-md-4 amet-sed">
+					<div class="col-md-6 amet-sed">
 						<h4>Newsletter</h4>
-						<p>Sign Up to get all news update and promo</p>
+						<p>Assine nossa newsletter para receber promoçoes</p>
 						<form>
 							<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
-							<input type="submit" value="Sign up">
+							<input type="submit" value="Enviar">
 						</form>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
 			<div class="footer-class">
-				<p >© 2015 New store All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+				<p>© 2018 Eletronics Shop All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 			</div>
 		</div>
 	</body>

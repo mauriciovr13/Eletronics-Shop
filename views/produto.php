@@ -40,7 +40,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="search">
 					<form>
 						<input type="text" value="Search " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-						<input type="submit" value="Go">
+						<input type="submit" value="Buscar">
 					</form>
 			</div>
 			<div class="header-left">		

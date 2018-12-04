@@ -24,7 +24,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'><!--//fonts-->
 		<!-- start menu -->
-		<link href="css/memenu.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="../css/memenu.css" rel="stylesheet" type="text/css" media="all" />
 		<script type="text/javascript" src="../js/memenu.js"></script>
 		<script>$(document).ready(function(){$(".memenu").memenu();});</script>
 		<script src="../js/simpleCart.min.js"> </script>
@@ -37,151 +37,56 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="search">
 						<form>
 							<input type="text" value="Search " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
-							<input type="submit" value="Go">
+							<input type="submit" value="Buscar">
 						</form>
 					</div>
 					<div class="header-left">		
 						<ul>
-							<li ><a class="lock"  href="login.html"  >Login</a></li>
-							<li><a class="lock" href="register.html"  >Register</a></li>
+							<li ><a class="lock"  href="login.php">Login</a></li>
+							<li><a class="lock" href="#">Cadastrar</a></li>
 							<li></li>
 						</ul>
 						<div class="cart box_1">
-							<a href="checkout.html">
+							<a href="checkout.php">
 								<h3> 
 									<div class="total">
 										<span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
 									</div>
-									<img src="images/cart.png" alt=""/>
+									<img src="../images/cart.png" alt=""/>
 								</h3>
 							</a>
-							<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
+
 			<div class="container">
 				<div class="head-top">
 					<div class="logo">
-						<a href="index.php"><img src="../images/logo.png" alt=""></a>	
+						<a href="index.html"><img src="../images/logo.png" alt=""></a>	
 					</div>
-					<div class=" h_menu4">
+					<div class="h_menu4">
 						<ul class="memenu skyblue">
-							<li class="active grid"><a class="color8" href="index.php">Home</a></li>	
-							<li><a class="color1" href="#">Shop</a>
+							<li class="grid"><a class="color3" href="index.php">Inicio</a></li>	
+							<li><a class="color1" href="#">Categorias</a>
 								<div class="mepanel">
 									<div class="row">
 										<div class="col1">
 											<div class="h_nav">
 												<ul>
-													<li><a href="products.html">Accessories</a></li>
-													<li><a href="products.html">Bags</a></li>
-													<li><a href="products.html">Caps & Hats</a></li>
-													<li><a href="products.html">Hoodies & Sweatshirts</a></li>
-													<li><a href="products.html">Jackets & Coats</a></li>
-													<li><a href="products.html">Jeans</a></li>
-													<li><a href="products.html">Jewellery</a></li>
-													<li><a href="products.html">Jumpers & Cardigans</a></li>
-													<li><a href="products.html">Leather Jackets</a></li>
-													<li><a href="products.html">Long Sleeve T-Shirts</a></li>
-													<li><a href="products.html">Loungewear</a></li>
+													<li><a href="products.html">Categoria1</a></li>
+													<li><a href="products.html">Categoria2</a></li>
+													<li><a href="products.html">Categoria3</a></li>
+													<li><a href="products.html">Categoria4</a></li>
 												</ul>	
 											</div>							
-										</div>
-										<div class="col1">
-											<div class="h_nav">
-												<ul>
-													<li><a href="products.html">Shirts</a></li>
-													<li><a href="products.html">Shoes, Boots & Trainers</a></li>
-													<li><a href="products.html">Shorts</a></li>
-													<li><a href="products.html">Suits & Blazers</a></li>
-													<li><a href="products.html">Sunglasses</a></li>
-													<li><a href="products.html">Sweatpants</a></li>
-													<li><a href="products.html">Swimwear</a></li>
-													<li><a href="products.html">Trousers & Chinos</a></li>
-													<li><a href="products.html">T-Shirts</a></li>
-													<li><a href="products.html">Underwear & Socks</a></li>
-													<li><a href="products.html">Vests</a></li>
-												</ul>	
-											</div>							
-										</div>
-										<div class="col1">
-											<div class="h_nav">
-												<h4>Popular Brands</h4>
-												<ul>
-													<li><a href="products.html">Levis</a></li>
-													<li><a href="products.html">Persol</a></li>
-													<li><a href="products.html">Nike</a></li>
-													<li><a href="products.html">Edwin</a></li>
-													<li><a href="products.html">New Balance</a></li>
-													<li><a href="products.html">Jack & Jones</a></li>
-													<li><a href="products.html">Paul Smith</a></li>
-													<li><a href="products.html">Ray-Ban</a></li>
-													<li><a href="products.html">Wood Wood</a></li>
-												</ul>	
-											</div>												
 										</div>
 									</div>
-								</div>
+								</div>	
 							</li>
-							<li class="grid"><a class="color2" href="#">	Lookbook</a>
-								<div class="mepanel">
-									<div class="row">
-										<div class="col1">
-											<div class="h_nav">
-												<ul>
-													<li><a href="products.html">Accessories</a></li>
-													<li><a href="products.html">Bags</a></li>
-													<li><a href="products.html">Caps & Hats</a></li>
-													<li><a href="products.html">Hoodies & Sweatshirts</a></li>
-													<li><a href="products.html">Jackets & Coats</a></li>
-													<li><a href="products.html">Jeans</a></li>
-													<li><a href="products.html">Jewellery</a></li>
-													<li><a href="products.html">Jumpers & Cardigans</a></li>
-													<li><a href="products.html">Leather Jackets</a></li>
-													<li><a href="products.html">Long Sleeve T-Shirts</a></li>
-													<li><a href="products.html">Loungewear</a></li>
-												</ul>	
-											</div>
-										</div>
-										<div class="col1">
-											<div class="h_nav">
-												<ul>
-													<li><a href="products.html">Shirts</a></li>
-													<li><a href="products.html">Shoes, Boots & Trainers</a></li>
-													<li><a href="products.html">Shorts</a></li>
-													<li><a href="products.html">Suits & Blazers</a></li>
-													<li><a href="products.html">Sunglasses</a></li>
-													<li><a href="products.html">Sweatpants</a></li>
-													<li><a href="products.html">Swimwear</a></li>
-													<li><a href="products.html">Trousers & Chinos</a></li>
-													<li><a href="products.html">T-Shirts</a></li>
-													<li><a href="products.html">Underwear & Socks</a></li>
-													<li><a href="products.html">Vests</a></li>
-												</ul>	
-											</div>							
-										</div>
-										<div class="col1">
-											<div class="h_nav">
-												<h4>Popular Brands</h4>
-												<ul>
-													<li><a href="products.html">Levis</a></li>
-													<li><a href="products.html">Persol</a></li>
-													<li><a href="products.html">Nike</a></li>
-													<li><a href="products.html">Edwin</a></li>
-													<li><a href="products.html">New Balance</a></li>
-													<li><a href="products.html">Jack & Jones</a></li>
-													<li><a href="products.html">Paul Smith</a></li>
-													<li><a href="products.html">Ray-Ban</a></li>
-													<li><a href="products.html">Wood Wood</a></li>
-												</ul>	
-											</div>												
-										</div>
-									</div>
-								</div>
-							</li>
+							<li><a class="color6" href="contato.php">Contato</a></li>
 						</ul> 
 					</div>
 					<div class="clearfix"> </div>
@@ -192,37 +97,39 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!--content-->
 		<div class=" container">
 			<div class=" register">
-				<h1>Register</h1>
+				<h1>Cadastro</h1>
 				<form> 
 					<div class="col-md-6 register-top-grid">
-						<h3>Personal infomation</h3>
+						<h3>Informações Pessoais</h3>
 						<div>
-							<span>First Name</span>
+							<span>Primeiro nome</span>
 							<input type="text"> 
 						</div>
 						<div>
-							<span>Last Name</span>
+							<span>Sobrenome</span>
 							<input type="text"> 
 						</div>
 						<div>
-							<span>Email Address</span>
+							<span>Email</span>
 							<input type="text"> 
 						</div>
-						<a class="news-letter" href="#">
-							<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Sign Up for Newsletter</label>
-						</a>
+						<div>
+							<span>Data de Nascimento</span>
+							<input type="text" placeholder="dd/MM/aaaa"> 
+						</div>
+
 					</div>
 					<div class="col-md-6 register-bottom-grid">
-						<h3>Login information</h3>
+						<h3>Informaçoes de LOGIN</h3>
 						<div>
-							<span>Password</span>
+							<span>Senha</span>
 							<input type="password">
 						</div>
 						<div>
-							<span>Confirm Password</span>
+							<span>Confirmação de Senha</span>
 							<input type="password">
 						</div>
-						<input type="submit" value="submit">
+						<input type="submit" value="Cadastrar">
 					</div>
 					<div class="clearfix"> </div>
 				</form>
@@ -267,9 +174,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 			</div>
 			<div class="footer-class">
-				<p >© 2015 New store All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+				<p >© 2015 Eletronics Shop All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 			</div>
 		</div>
 	</body>
 </html>
-			
