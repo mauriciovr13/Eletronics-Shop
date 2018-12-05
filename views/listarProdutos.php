@@ -92,7 +92,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="container">
 				<div class="head-top">
 					<div class="logo">
-						<a href="index.html"><img src="../images/logo.png" alt=""></a>	
+						<a href="../views/index.php"><img src="../images/logo.png" alt=""></a>	
 					</div>
 					<div class=" h_menu4">
 						<ul class="memenu skyblue">
@@ -126,7 +126,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <div class="register">
                 <div class="head-top">
                     <form action="../controller/cons_produto.php" method="POST">
-                        <h1>Visualizar Produto</h1><br>
+                        <h3 style="text-align:center;">Visualizar Produto</h3><br>
                         <hr class="my-4" style="padding-bottom: 50px;">
                         <div class="row justify-content-center">
                             <div class="col-md-12 register-top-grid">

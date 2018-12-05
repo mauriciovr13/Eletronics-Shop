@@ -14,9 +14,9 @@
 
 		function consultar($cod, $link) {
 			$query = "SELECT * FROM Produto WHERE codProduto = '".$cod."'";
-			
 			$consulta = mysqli_query($link, $query);
-			if(!$consulta) {
+			$rows = mysqli_num_rows($consulta);
+			if(!$consulta || $rows==0) {
 				die("ERRO. PRODUTO NÃO ENCONTRADO.");
 			}
 			return $consulta;

@@ -57,7 +57,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								if (isset($_SESSION['login'])) {
 									if ($_SESSION['user'] == "admin") {
 							?>
-							<li><a href="viewAdmin.php"><?php echo $_SESSION['user']; ?></a></li>
+							<li><a href="../views/viewAdmin.php"><?php echo $_SESSION['user']; ?></a></li>
 							<li><a href="?acao=sair">Sair</a></li>
 							<?php
 									} else {
@@ -147,7 +147,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <div class="col-md-6 register-top-grid">
 								<div>
                                     <span>Codigo do produto</span>
-                                    <input type="text" name="codigo" value="<?php echo $view['codProduto']; ?>" disabled>
+                                    <input type="text" name="cod" value="<?php echo $view['codProduto']; ?>" disabled>
                                 </div>
                                 <div>
                                     <span>Nome</span>

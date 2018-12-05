@@ -92,7 +92,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="container">
 				<div class="head-top">
 					<div class="logo">
-						<a href="index.html"><img src="../images/logo.png" alt=""></a>	
+						<a href="index.html"><img src="../images/logo.jpg" alt=""></a>	
 					</div>
 					<div class=" h_menu4">
 						<ul class="memenu skyblue">

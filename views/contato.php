@@ -31,6 +31,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</head>
 	<body>
 	<!--header-->
+
+	<?php
+		session_start();
+	?>
+
 	<div class="header">
 		<div class="header-top">
 			<div class="container">
@@ -42,8 +47,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 				<div class="header-left">		
 					<ul>
-						<li ><a class="lock"  href="login.php">Login</a></li>
-						<li><a class="lock" href="cadastrar.php">Cadastrar</a></li>
+						<?php
+							if(isset($_GET['acao']) && $_GET['acao'] == 'sair'){
+								unset($_SESSION['login']);
+								unset($_SESSION['senha']);
+								unset($_SESSION['user']);
+								unset($_SESSION['nome']);
+								session_destroy();
+							}
+							if (isset($_SESSION['login'])) {
+								if ($_SESSION['user'] == "admin") {
+						?>
+						<li><a href="viewAdmin.php"><?php echo $_SESSION['user']; ?></a></li>
+						<li><a href="?acao=sair">Sair</a></li>
+						<?php
+								} else {
+						?>
+						<li><a href="login.php"><?php echo $_SESSION['nome']; ?></a></li>
+						<li><a href="?acao=sair">Sair</li>
+						<?php
+								}
+							} else {
+						?>
+						<li><a href="login.php">Login</a></li>
+						<li><a href="cadastrar.php">Cadastrar</a></li>
+						<?php
+								}
+						?>
 					</ul>
 					<div class="cart box_1">
 						<a href="checkout.php">

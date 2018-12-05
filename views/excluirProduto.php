@@ -92,7 +92,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="container">
 				<div class="head-top">
 					<div class="logo">
-						<a href="index.html"><img src="../images/logo.png" alt=""></a>	
+						<a href="index.php"><img src="../images/logo.png" alt=""></a>	
 					</div>
 					<div class=" h_menu4">
 						<ul class="memenu skyblue">
@@ -135,11 +135,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <div class="col-md-6 register-top-grid">
                                 <div style="padding-bottom: 20px;">
                                     <span>Código do produto</span>
-                                    <input type="number" name="codigo"> 
+                                    <input type="number" name="cod"> 
                                 </div>
                             </div>
                             <div class="col-md-8 register-bottom-grid">
-                                <input type="submit" value="Enviar">						
+                                <input type="submit" value="Excluir">						
                             </div>
                         </div>
                         <div class="clearfix"> </div>
