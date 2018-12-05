@@ -46,15 +46,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="header-left">		
 						<ul>
 							<?php
-								if (isset($_SESSION['logado'])) {
+								if(isset($_GET['acao']) && $_GET['acao'] == 'sair'){
+									unset($_SESSION['login']);
+									unset($_SESSION['senha']);
+									unset($_SESSION['user']);
+									unset($_SESSION['nome']);
+									session_destroy();
+									
+							 	}
+								if (isset($_SESSION['login'])) {
 									if ($_SESSION['user'] == "admin") {
 							?>
-							<li><a href="login.php"><?php echo $_SESSION['user']; ?></a></li>
+							<li><a href="viewAdmin.php"><?php echo $_SESSION['user']; ?></a></li>
+							<li><a href="?acao=sair">Sair</a></li>
 							<?php
 									} else {
 							?>
-							<li><a href="login.php"><?php echo $_SESSION['user']; ?></a></li>
-							<li><a href="index.php">Sair</li>
+							<li><a href="login.php"><?php echo $_SESSION['nome']; ?></a></li>
+							<li><a href="?acao=sair">Sair</li>
 							<?php
 									}
 								} else {

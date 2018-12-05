@@ -501,6 +501,12 @@ height: 35px;
 	color:#fff;
 	font-size: 2em;
 }
+
+.centralizado {
+	margin-left : auto;
+	margin-right : auto;
+}
+
 .men{
 	position: relative;
 }

@@ -5,19 +5,15 @@ SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL,ALLOW_INVALID_DATES';
 
 -- -----------------------------------------------------
--- Schema pevstore
+-- Schema eletronics-shop
 -- -----------------------------------------------------
+CREATE DATABASE IF NOT EXISTS `eletronics-shop` DEFAULT CHARACTER SET utf8 ;
+USE `eletronics-shop` ;
 
 -- -----------------------------------------------------
--- Schema pevstore
+-- Table `eletronics-shop`.`Pessoa`
 -- -----------------------------------------------------
-CREATE DATABASE IF NOT EXISTS `pevstore` DEFAULT CHARACTER SET utf8 ;
-USE `pevstore` ;
-
--- -----------------------------------------------------
--- Table `pevstore`.`Pessoa`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `pevstore`.`Pessoa` (
+CREATE TABLE IF NOT EXISTS `eletronics-shop`.`Pessoa` (
   `cpf` VARCHAR(14) NOT NULL,
   `nome` VARCHAR(45) NOT NULL,
   `dataNascimento` DATE NULL,
@@ -32,9 +28,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `pevstore`.`Transportadora`
+-- Table `eletronics-shop`.`Transportadora`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `pevstore`.`Transportadora` (
+CREATE TABLE IF NOT EXISTS `eletronics-shop`.`Transportadora` (
   `idTransportadora` INT NOT NULL AUTO_INCREMENT,
   `cnpjTransportadora` VARCHAR(45) NOT NULL,
   `nome` VARCHAR(45) NOT NULL,
@@ -44,9 +40,9 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `pevstore`.`Fornecedor`
+-- Table `eletronics-shop`.`Fornecedor`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `pevstore`.`Fornecedor` (
+CREATE TABLE IF NOT EXISTS `eletronics-shop`.`Fornecedor` (
   `cnpjFornecedor` VARCHAR(14) NOT NULL,
   `nome` VARCHAR(80) NOT NULL,
   `idFornecedor` INT NOT NULL AUTO_INCREMENT,
@@ -58,7 +54,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `pevstore`.`Produto`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `pevstore`.`Produto` (
+CREATE TABLE IF NOT EXISTS `eletronics-shop`.`Produto` (
   `codProduto` INT NOT NULL AUTO_INCREMENT,
   `precoCompra` DECIMAL(8,2) NULL,
   `precoVenda` DECIMAL(8,2) NULL,
@@ -72,7 +68,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `pevstore`.`Compra`
 -- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS `pevstore`.`Compra` (
+CREATE TABLE IF NOT EXISTS `eletronics-shop`.`Compra` (
   `idCompra` INT NOT NULL AUTO_INCREMENT,
   `dataPedido` DATE NOT NULL,
   `Pessoa_id` INT NOT NULL,

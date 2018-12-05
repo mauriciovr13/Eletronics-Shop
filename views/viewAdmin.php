@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Cadastrar - Eletronics Shop</title>
+		<title>Eletronics Shop</title>
 		<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="../js/jquery.min.js"></script>
@@ -31,17 +31,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</head>
 	<body>
 		<!--header-->
+		<?php
+			session_start();
+		?>
 		<div class="header">
 			<div class="header-top">
 				<div class="container">
 					<div class="search">
 						<form>
-							<input type="text" value="Search " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+							<input type="text" value="Buscar um produto " onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
 							<input type="submit" value="Buscar">
 						</form>
 					</div>
 					<div class="header-left">		
-						<ul>
+                        <ul>
 							<?php
 								if(isset($_GET['acao']) && $_GET['acao'] == 'sair'){
 									unset($_SESSION['login']);
@@ -86,15 +89,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="clearfix"> </div>
 				</div>
 			</div>
-
 			<div class="container">
 				<div class="head-top">
 					<div class="logo">
 						<a href="index.html"><img src="../images/logo.png" alt=""></a>	
 					</div>
-					<div class="h_menu4">
+					<div class=" h_menu4">
 						<ul class="memenu skyblue">
-							<li class="grid"><a class="color3" href="index.php">Inicio</a></li>	
+							<li class="active grid"><a class="color8" href="index.php">Inicio</a></li>	
 							<li><a class="color1" href="#">Categorias</a>
 								<div class="mepanel">
 									<div class="row">
@@ -103,8 +105,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 												<ul>
 													<li><a href="products.html">Categoria1</a></li>
 													<li><a href="products.html">Categoria2</a></li>
-													<li><a href="products.html">Categoria3</a></li>
 													<li><a href="products.html">Categoria4</a></li>
+													<li><a href="products.html">Categoria5</a></li>
 												</ul>	
 											</div>							
 										</div>
@@ -118,72 +120,42 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				</div>
 			</div>
 		</div>
-			
-		<!--content-->
-		<div class=" container">
-			<div class=" register">
-				<h1>Cadastro</h1>
-				<form action="../controller/cad_cliente.php" method="POST"> 
-					<div class="col-md-6 register-top-grid">
-						<h3>Informações Pessoais</h3>
-						<div>
-							<span>Primeiro nome</span>
-							<input name="nome" type="text"> 
-						</div>
-						<div>
-							<span>Sobrenome</span>
-							<input name="sobrenome" type="text"> 
-						</div>
-						<div>
-							<span>CPF</span>
-							<input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="ex: 111.111.111-11" required> 
-						</div>
-						<div>
-							<span>Email</span>
-							<input name="email" type="text"> 
-						</div>
-						<div>
-							<span>Data de Nascimento</span>
-							<input name="nascimento" type="text" placeholder="AAAA/MM/dd"> 
-						</div>
+		<div class="row centralizado" style="padding-bottom: 70px; padding-top: 70px">							
+			<div class="col-md-12">
+				<div class="col-md-2">
+					<a class="lock" href="listarProdutos.php" style="color: black;">
+						<img src="../images/verProd.png"><br>
+						<!--<div>Icons made by <a href="https://www.flaticon.com/authors/smalllikeart" title="smalllikeart">smalllikeart</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+						Consultar/Alterar produto
+					</a>
+				</div>
 
-					</div>
-					<div class="col-md-6 register-bottom-grid">
-						<h3>Informaçoes de LOGIN</h3>
-						<div>
-							<span>Senha</span>
-							<input name="senha" type="password">
-						</div>
-						<div>
-							<span>Confirmação de Senha</span>
-							<input name="conf-senha" type="password">
-						</div>
-						<input type="submit" value="Cadastrar">
-					</div>
-					<div class="clearfix"> </div>
-				</form>
+				<div class="col-md-2">
+					<a class="lock" href="cadastrarProduto.php" style="color: black;">
+						<img src="../images/verProd.png"><br>
+						<!--<div>Icons made by <a href="https://www.flaticon.com/authors/smalllikeart" title="smalllikeart">smalllikeart</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+						Cadastrar produto
+					</a>
+				</div>
+
+				<div class="col-md-2">
+					<a class="lock" href="excluirProduto.php" style="color: black;">
+						<img src="../images/verProd.png"><br>
+						<!--<div>Icons made by <a href="https://www.flaticon.com/authors/smalllikeart" title="smalllikeart">smalllikeart</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
+						Remover produto
+					</a>
+				</div>				
 			</div>
 		</div>
 
-		<!--//content-->
 		<div class="footer">
 			<div class="container">
 				<div class="footer-top-at">
-					<div class="col-md-4 amet-sed">
-						<h4>MORE INFO</h4>
-						<ul class="nav-bottom">
-							<li><a href="#">How to order</a></li>
-							<li><a href="#">FAQ</a></li>
-							<li><a href="contact.html">Location</a></li>
-							<li><a href="#">Shipping</a></li>
-							<li><a href="#">Membership</a></li>	
-						</ul>	
-					</div>
-					<div class="col-md-4 amet-sed ">
-						<h4>CONTACT US</h4>
-						<p>Contrary to popular belief</p>
-						<p>The standard chunk</p>
-						<p>office:  +12 34 995 0792</p>
+					<div class="col-md-6 amet-sed ">
+						<h4>Eletronics Shop</h4>
+						<p>Universidade Federal de Lavras</p>
+						<p>Lavras - MG</p>
+						<p>telefone: +55 35 3634 1112</p>
 						<ul class="social">
 							<li><a href="#"><i> </i></a></li>						
 							<li><a href="#"><i class="twitter"> </i></a></li>
@@ -191,19 +163,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li><a href="#"><i class="gmail"> </i></a></li>
 						</ul>
 					</div>
-					<div class="col-md-4 amet-sed">
+					<div class="col-md-6 amet-sed">
 						<h4>Newsletter</h4>
-						<p>Sign Up to get all news update and promo</p>
+						<p>Assine nossa newsletter para receber promoçoes</p>
 						<form>
 							<input type="text" value="" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='';}">
-							<input type="submit" value="Sign up">
+							<input type="submit" value="Enviar">
 						</form>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
 			</div>
 			<div class="footer-class">
-				<p >© 2015 Eletronics Shop All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
+				<p>© 2018 Eletronics Shop All Rights Reserved | Design by  <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
 			</div>
 		</div>
 	</body>

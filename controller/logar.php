@@ -24,7 +24,7 @@
         }else{
             $_SESSION['user'] = 'notUser';
         }
-        header('location:pagInicial.php');
+        header('location:../views/index.php');
     }
     else{
         unset ($_SESSION['login']);
