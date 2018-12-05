@@ -42,8 +42,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div class="header-left">		
 						<ul>
-							<li ><a class="lock"  href="#">Login</a></li>
-							<li><a class="lock" href="cadastrar.php">Cadastrar</a></li>
+							<?php
+								if (isset($_SESSION['logado'])) {
+									if ($_SESSION['user'] == "admin") {
+							?>
+							<li><a href="login.php"><?php echo $_SESSION['user']; ?></a></li>
+							<?php
+									} else {
+							?>
+							<li><a href="login.php"><?php echo $_SESSION['user']; ?></a></li>
+							<?php
+									}
+								} else {
+							?>
+							<li><a href="login.php">Login</a></li>
+							<li><a href="cadastrar.php">Cadastrar</a></li>
+							<?php
+									}
+							?>
 						</ul>
 						<div class="cart box_1">
 							<a href="checkout.html">
@@ -99,14 +115,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<h1>Bem-vindo</h1>
 				<div class="account-pass">
 					<div class="col-md-8 account-top">
-						<form>				
+						<form action="../controller/logar.php" method="POST">
 							<div> 	
 								<span>Email</span>
-								<input type="text"> 
+								<input name="login" type="text"> 
 							</div>
 							<div> 
 								<span>Senha</span>
-								<input type="password">
+								<input name="senha" type="password">
 							</div>				
 							<input type="submit" value="Login"> 
 						</form>

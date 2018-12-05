@@ -31,6 +31,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</head>
 	<body>
 		<!--header-->
+		<?php
+			session_start();
+		?>
 		<div class="header">
 			<div class="header-top">
 				<div class="container">
@@ -42,8 +45,25 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div class="header-left">		
 						<ul>
-							<li ><a href="login.php">Login</a></li>
-							<li><a  href="cadastrar.php">Cadastrar</a></li>
+							<?php
+								if (isset($_SESSION['logado'])) {
+									if ($_SESSION['user'] == "admin") {
+							?>
+							<li><a href="login.php"><?php echo $_SESSION['user']; ?></a></li>
+							<?php
+									} else {
+							?>
+							<li><a href="login.php"><?php echo $_SESSION['user']; ?></a></li>
+							<li><a href="index.php">Sair</li>
+							<?php
+									}
+								} else {
+							?>
+							<li><a href="login.php">Login</a></li>
+							<li><a href="cadastrar.php">Cadastrar</a></li>
+							<?php
+									}
+							?>
 						</ul>
 						<div class="cart box_1">
 							<a href="checkout.php">
