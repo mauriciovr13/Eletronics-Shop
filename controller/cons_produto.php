@@ -52,7 +52,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									unset($_SESSION['user']);
 									unset($_SESSION['nome']);
                                     session_destroy();
-                                    header('location:index.php');
+                                    header('location:../views/index.php');
 							 	}
 								if (isset($_SESSION['login'])) {
 									if ($_SESSION['user'] == "admin") {
@@ -147,11 +147,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                             <div class="col-md-6 register-top-grid">
 								<div>
                                     <span>Codigo do produto</span>
-                                    <input type="text" name="cod" value="<?php echo $view['codProduto']; ?>" disabled>
+                                    <input type="text" name="cod" value="<?php echo $view['codProduto']; ?>">
                                 </div>
                                 <div>
                                     <span>Nome</span>
-                                    <input type="text" name="nome" value="<?php echo $view['nome']; ?>">
+	                                    <input type="text" name="nome" value="<?php echo $view['nome']; ?>">
                                 </div>
                                 <div>
                                     <span>Quantidade disponivel</span>
